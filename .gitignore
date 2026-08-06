@@ -1,0 +1,8 @@
+/build/
+/build-*/
+/.cache/
+/.clangd/
+compile_commands.json
+*.user
+*.swp
+
