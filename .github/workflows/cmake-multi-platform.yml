@@ -45,6 +45,13 @@ jobs:
             c_compiler: cl
 
     steps:
+    - name: Cache apt packages
+      uses: actions/cache@v4
+      id: apt-cache
+      with:
+        path: /var/cache/apt/archives
+        key: apt-cache-${{ runner.os }}-${{ hashFiles('.github/workflows/cmake-multi-platform.yml') }}
+
     - name: Install system dependencies (Linux) 
       if: runner.os == 'Linux' 
       run: | 
