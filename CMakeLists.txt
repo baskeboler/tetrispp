@@ -52,7 +52,7 @@ add_library(tetris_core
 target_include_directories(tetris_core PUBLIC include)
 tetris_target_defaults(tetris_core)
 
-add_executable(tetris_clone WIN32 src/main.cpp)
+add_executable(tetris_clone src/main.cpp)
 target_link_libraries(tetris_clone PRIVATE tetris_core SDL3::SDL3)
 tetris_target_defaults(tetris_clone)
 
