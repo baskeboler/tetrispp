@@ -1,4 +1,5 @@
 # Tetris Clone
+[![CMake on multiple platforms](https://github.com/baskeboler/tetrispp/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/baskeboler/tetrispp/actions/workflows/cmake-multi-platform.yml)
 
 A polished desktop falling-block game written in C++20 with SDL3. It uses only
 procedurally drawn graphics and generated sound effects, so there are no runtime
